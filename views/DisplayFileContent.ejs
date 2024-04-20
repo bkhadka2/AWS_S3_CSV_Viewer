@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>File content</title>
+  </head>
+  <body>
+    <h1>Hello from ejs file content page</h1>
+
+    <% if (!data.length) { %>
+    <h4>File is empty...Load file with data..</h4>
+    <% } else { %> <% for (const elem of data) { %>
+    <div class="name-container">
+      <div class="name-container--list"><%= elem[0] %></div>
+      <div class="name-container--list"><%= elem[1]%></div>
+      <div class="name-container--list"><%= elem[2]%></div>
+    </div>
+    <% } %> <% } %>
+  </body>
+</html>

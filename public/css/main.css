@@ -1,0 +1,17 @@
+h1, h4 {
+  text-align: center;
+}
+
+.name-container {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid green;
+  width: 50%;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  background: #caf0ca;
+}
+
+.name-container--list {
+  color: black;
+}
